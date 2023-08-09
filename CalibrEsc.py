@@ -22,9 +22,9 @@ pwm.start(0)  # Démarrer avec un rapport cyclique de 0 (vitesse nulle)
 def set_motor_speed(speed_percent):
     # Convertir le pourcentage en microsecondes (1000-2000 us)
     pwm_us = 1000 + (speed_percent * 10)  # Convertir en microsecondes
-    pwm.ChangeDutyCycle(0)  # Assurez-vous que le moteur est arrêté
-    time.sleep(1)  # Attendez un peu avant de changer la vitesse
-    pwm.ChangeDutyCycle(pwm_us / 10)  # Convertir en rapport cyclique (100-200)
+    # Normaliser en une plage de devoir cyclique (0.0-100.0)
+    duty_cycle = (pwm_us - 1000) / 10.0
+    pwm.ChangeDutyCycle(duty_cycle)
     time.sleep(3)  # Laisser le signal PWM actif pendant quelques secondes
 
 # Calibration simulée
