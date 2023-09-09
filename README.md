@@ -1,5 +1,8 @@
 # Drone
 
+https://www.raspberryme.com/utilisation-de-base-du-servo-avec-le-raspberry-pi-et-gpiozero/
+
+
 hdmi_drive=2
 
 Config.txt se trouve dans /boot et je l'ai édité en chargeant LXTerminal et en utilisant la ligne de commande suivante :
