@@ -3,12 +3,6 @@ from time import sleep
 
 myGPIO=17
 
-# Min and Max pulse widths converted into milliseconds
-# To increase range of movement:
-#   increase maxPW from default of 2.0
-#   decrease minPW from default of 1.0
-# Change myCorrection using increments of 0.05 and
-# check the value works with your servo.
 maxPW=(2.35)/1000
 minPW=(1.0)/1000
 
