@@ -1,7 +1,7 @@
 # Drone
 
 https://www.raspberryme.com/utilisation-de-base-du-servo-avec-le-raspberry-pi-et-gpiozero/
-
+192.168.1.53
 
 hdmi_drive=2
 
